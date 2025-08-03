@@ -27,10 +27,6 @@
       "gecko": {
         "id": "sachinabs.js@gmail.com"
       }
-    },
-    "content_security_policy": {
-  "extension_pages": "script-src 'self'; object-src 'self'; img-src https://chart.googleapis.com data:"
-}
-
+    }
   }
   
