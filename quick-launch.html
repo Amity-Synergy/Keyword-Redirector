@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick Launch</title>
+  <script src="quick-launch.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white p-5 text-sm w-[460px] h-[360px] overflow-y-auto">
+
+  <h2 class="text-xl font-semibold mb-3 text-gray-800">🔍 Quick Launch</h2>
+
+  <p class="text-gray-600 text-xs mb-2">
+    Type <span class="font-semibold text-gray-800">add</span> to create a new redirect,<br />
+    Type <span class="font-semibold text-gray-800">list</span> to view all saved redirects.<br />
+    <span class="text-gray-500 italic">Press Escape to close this window.</span>
+  </p>
+
+  <input id="launchInput" type="text" placeholder="Type a keyword or 'add'"
+    class="w-full border border-gray-300 rounded p-2 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" />
+
+  <p id="feedback" class="text-red-500 text-xs mt-1 hidden"></p>
+
+  <div id="addForm" class="hidden mt-4">
+    <input id="newKeyword" class="w-full p-2 border border-gray-300 rounded mb-2" placeholder="New keyword" />
+    <input id="newUrl" class="w-full p-2 border border-gray-300 rounded mb-3" placeholder="URL" />
+    <button id="saveBtn"
+      class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors">Save</button>
+  </div>
+
+  <div id="listSection" class="hidden mt-4">
+    <h3 class="font-semibold text-gray-700 mb-2">📋 Saved Keywords</h3>
+    <ul id="redirectList" class="space-y-2"></ul>
+  </div>
+
+</body>
+
+</html>
